@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viatours – Tours and Trip Packages, Globally</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+      <!-- TOP BAR: Search hint | Logo | USD Sign up Log in -->
+      <div class="topbar">
+        <div class="topbar__inner container">
+          <span class="topbar__search">Search destinations or activities</span>
+
+          <a href="#" class="topbar__logo">
+            <!-- Літак + текст viatours -->
+            <svg class="topbar__logo-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 16v-2l-8-5V3.5A1.5 1.5 0 0 0 11.5 2 1.5 1.5 0 0 0 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="currentColor"/>
+            </svg>
+            <span class="topbar__logo-text">viatours</span>
+          </a>
+
+          <div class="topbar__actions">
+            <span class="topbar__currency">USD</span>
+            <a href="#" class="topbar__link">Sign up</a>
+            <a href="#" class="topbar__login">Log in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero__bg">
+          <img
+            src="images/hero-bg.png"
+            alt="Beautiful travel destination"
+            class="hero__bg-img"
+          />
+        </div>
+
+        <!-- Заголовок по центру зображення -->
+        <div class="hero__content container">
+          <p class="hero__tagline">Search, compare and book 15,000+ multiday tours all over the world.</p>
+          <h1 class="hero__title">
+            Tours and Trip packages,
+            <span class="hero__title--italic">Globally</span>
+          </h1>
+        </div>
+
+        <!-- Навігаційні стрілки по боках -->
+        <button class="hero__arrow hero__arrow--left" aria-label="Previous">&#8249;</button>
+        <button class="hero__arrow hero__arrow--right" aria-label="Next">&#8250;</button>
+      </section>
+
+      <!-- SEARCH BAR — на стику hero і контенту -->
+      <div class="search-bar-wrap">
+        <form class="search-bar container" role="search">
+
+          <div class="search-bar__group">
+            <span class="search-bar__circle" aria-hidden="true"></span>
+            <div class="search-bar__group-text">
+              <label class="search-bar__label" for="destination">Where</label>
+              <input
+                class="search-bar__input"
+                id="destination"
+                type="text"
+                placeholder="Search destinations"
+              />
+            </div>
+          </div>
+
+          <div class="search-bar__divider"></div>
+
+          <div class="search-bar__group">
+            <span class="search-bar__circle" aria-hidden="true"></span>
+            <div class="search-bar__group-text">
+              <label class="search-bar__label" for="dates">When</label>
+              <input
+                class="search-bar__input"
+                id="dates"
+                type="text"
+                value="February 05 ~ March 14"
+                readonly
+              />
+            </div>
+          </div>
+
+          <div class="search-bar__divider"></div>
+
+          <div class="search-bar__group">
+            <span class="search-bar__circle" aria-hidden="true"></span>
+            <div class="search-bar__group-text">
+              <label class="search-bar__label" for="tour-type">Tour Type</label>
+              <select class="search-bar__input search-bar__select" id="tour-type">
+                <option>All tour</option>
+                <option>Adventure</option>
+                <option>Nature</option>
+                <option>Food</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn btn--primary search-bar__btn" type="submit">
+            Search
+          </button>
+
+        </form>
+      </div>
+
+    </header>
+
+    <main>
+
+      <!-- FEATURED TRIPS SECTION -->
+      <section class="section featured" id="featured">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Featured Trips</h2>
+            <div class="section__tabs">
+              <button class="tab tab--active">Adventure</button>
+              <button class="tab">Nature</button>
+              <button class="tab">Food</button>
+            </div>
+          </div>
+
+          <div class="cards-grid">
+
+            <!-- Card 1 -->
+            <article class="card">
+              <div class="card__img-wrap">
+                <img src="images/featured-1.png" alt="Arizona Desert ATV Tour" class="card__img" />
+                <button class="card__wishlist" aria-label="Add to wishlist"></button>
+              </div>
+              <div class="card__body">
+                <p class="card__city">Paris, France</p>
+                <h3 class="card__title">
+                  Centipede Tour – Guided Arizona Desert Tour by ATV
+                </h3>
+                <div class="card__rating-wrap">
+                  <span class="card__rating">4.8 <span class="card__reviews">(243)</span></span>
+                </div>
+                <div class="card__meta">
+                  <span class="card__duration">4 days</span>
+                  <p class="card__price">From <strong>$189.25</strong></p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+              <div class="card__img-wrap">
+                <img src="images/featured-2.png" alt="Circle Island Day Tour" class="card__img" />
+                <button class="card__wishlist" aria-label="Add to wishlist"></button>
+              </div>
+              <div class="card__body">
+                <p class="card__city">New York, USA</p>
+                <h3 class="card__title">
+                  All Inclusive Ultimate Circle Island Day Tour with Lunch
+                </h3>
+                <div class="card__rating-wrap">
+                  <span class="card__rating">4.8 <span class="card__reviews">(243)</span></span>
+                </div>
+                <div class="card__meta">
+                  <span class="card__duration">4 days</span>
+                  <p class="card__price">From <strong>$771</strong></p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+              <div class="card__img-wrap">
+                <img src="images/featured-3.png" alt="Arizona Desert Tour" class="card__img" />
+                <button class="card__wishlist" aria-label="Add to wishlist"></button>
+              </div>
+              <div class="card__body">
+                <p class="card__city">Paris, France</p>
+                <h3 class="card__title">
+                  Centipede Tour – Guided Arizona Desert Tour by ATV
+                </h3>
+                <div class="card__rating-wrap">
+                  <span class="card__rating">5 <span class="card__reviews">(269)</span></span>
+                </div>
+                <div class="card__meta">
+                  <span class="card__duration">4 days</span>
+                  <p class="card__price">From <strong>$189.25</strong></p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card">
+              <div class="card__img-wrap">
+                <img src="images/featured-4.png" alt="Westminster Abbey London" class="card__img" />
+                <button class="card__wishlist" aria-label="Add to wishlist"></button>
+              </div>
+              <div class="card__body">
+                <p class="card__city">London, UK</p>
+                <h3 class="card__title">
+                  Westminster Walking Tour &amp; Westminster Abbey Entry
+                </h3>
+                <div class="card__rating-wrap">
+                  <span class="card__rating">5 <span class="card__reviews">(269)</span></span>
+                </div>
+                <div class="card__meta">
+                  <span class="card__duration">4 days</span>
+                  <p class="card__price">From <strong>$943</strong></p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="card">
+              <div class="card__img-wrap">
+                <img src="images/featured-5.png" alt="Kayak Tour Tampa Bay" class="card__img" />
+                <button class="card__wishlist" aria-label="Add to wishlist"></button>
+              </div>
+              <div class="card__body">
+                <p class="card__city">New York, USA</p>
+                <h3 class="card__title">
+                  Clear Kayak Tour of Shell Key Preserve and Tampa Bay Area
+                </h3>
+                <div class="card__rating-wrap">
+                  <span class="card__rating">5 <span class="card__reviews">(269)</span></span>
+                </div>
+                <div class="card__meta">
+                  <span class="card__duration">4 days</span>
+                  <p class="card__price">From <strong>$225</strong></p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <div class="featured__dots">
+            <span class="featured__dot"></span>
+            <span class="featured__dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRENDING DESTINATIONS SECTION -->
+      <section class="section trending" id="trending">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Trending Destinations</h2>
+            <a href="#" class="section__link">See all</a>
+          </div>
+
+          <div class="trending__grid">
+            <article class="trending__card trending__card--large">
+              <img src="images/trending-1.png" alt="Cruises" class="trending__img" />
+              <div class="trending__overlay"><h3 class="trending__name">Cruises</h3></div>
+            </article>
+
+            <article class="trending__card">
+              <img src="images/trending-2.png" alt="Beach Tours" class="trending__img" />
+              <div class="trending__overlay"><h3 class="trending__name">Beach Tours</h3></div>
+            </article>
+
+            <article class="trending__card">
+              <img src="images/trending-3.png" alt="Museum Tour" class="trending__img" />
+              <div class="trending__overlay"><h3 class="trending__name">Museum Tour</h3></div>
+            </article>
+
+            <article class="trending__card">
+              <img src="images/trending-4.png" alt="Food" class="trending__img" />
+              <div class="trending__overlay"><h3 class="trending__name">Food</h3></div>
+            </article>
+
+            <article class="trending__card">
+              <img src="images/trending-5.png" alt="Hiking" class="trending__img" />
+              <div class="trending__overlay"><h3 class="trending__name">Hiking</h3></div>
+            </article>
+
+            <article class="trending__card">
+              <img src="images/trending-6.png" alt="City Tours" class="trending__img" />
+              <div class="trending__overlay"><h3 class="trending__name">City Tours</h3></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROMO BANNER SECTION -->
+      <section class="promo" id="promo">
+        <div class="container">
+          <div class="promo__inner">
+            <div class="promo__text">
+              <h2 class="promo__title">
+                Grab up to <span class="promo__highlight">35% off</span><br />
+                on your favorite<br />
+                Destination
+              </h2>
+              <p class="promo__subtitle">
+                Limited time offer, don't miss the opportunity
+              </p>
+              <a href="#" class="btn btn--primary">Book Now</a>
+            </div>
+            <div class="promo__img-wrap">
+              <img
+                src="images/promo-balloons.png"
+                alt="Hot air balloons over a beautiful destination"
+                class="promo__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOP ATTRACTIONS SECTION -->
+      <section class="section attractions" id="attractions">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Top Attractions</h2>
+            <a href="#" class="section__link">See all</a>
+          </div>
+
+          <ul class="attractions__grid">
+            <li class="attraction">
+              <img src="images/attraction-colosseum.png" alt="Colosseum" class="attraction__img" />
+              <div class="attraction__info">
+                <h3 class="attraction__name">Colosseum</h3>
+                <p class="attraction__tours">100+ Tours</p>
+              </div>
+            </li>
+
+            <li class="attraction">
+              <img src="images/attraction-liberty.png" alt="Statue of Liberty" class="attraction__img" />
+              <div class="attraction__info">
+                <h3 class="attraction__name">Statue of Liberty</h3>
+                <p class="attraction__tours">100+ Tours</p>
+              </div>
+            </li>
+
+            <li class="attraction">
+              <img src="images/attraction-vatican.png" alt="Vatican Museums" class="attraction__img" />
+              <div class="attraction__info">
+                <h3 class="attraction__name">Vatican Museums</h3>
+                <p class="attraction__tours">100+ Tours</p>
+              </div>
+            </li>
+
+            <li class="attraction">
+              <img src="images/attraction-eiffel.png" alt="Eiffel Tower" class="attraction__img" />
+              <div class="attraction__info">
+                <h3 class="attraction__name">Eiffel Tower</h3>
+                <p class="attraction__tours">100+ Tours</p>
+              </div>
+            </li>
+
+            <li class="attraction">
+              <img src="images/attraction-tower-london.png" alt="Tower of London" class="attraction__img" />
+              <div class="attraction__info">
+                <h3 class="attraction__name">Tower of London</h3>
+                <p class="attraction__tours">100+ Tours</p>
+              </div>
+            </li>
+
+            <li class="attraction">
+              <img src="images/attraction-911.png" alt="National September 11 Memorial" class="attraction__img" />
+              <div class="attraction__info">
+                <h3 class="attraction__name">National September 11 Memorial</h3>
+                <p class="attraction__tours">100+ Tours</p>
+              </div>
+            </li>
+
+            <li class="attraction">
+              <img src="images/attraction-stonehenge.png" alt="Stonehenge" class="attraction__img" />
+              <div class="attraction__info">
+                <h3 class="attraction__name">Stonehenge</h3>
+                <p class="attraction__tours">100+ Tours</p>
+              </div>
+            </li>
+
+            <li class="attraction">
+              <img src="images/attraction-antelope.png" alt="Antelope Canyon" class="attraction__img" />
+              <div class="attraction__info">
+                <h3 class="attraction__name">Antelope Canyon</h3>
+                <p class="attraction__tours">100+ Tours</p>
+              </div>
+            </li>
+
+            <li class="attraction">
+              <img src="images/attraction-louvre.png" alt="Louvre" class="attraction__img" />
+              <div class="attraction__info">
+                <h3 class="attraction__name">Louvre</h3>
+                <p class="attraction__tours">100+ Tours</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CUSTOMER REVIEWS SECTION -->
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <h2 class="section__title reviews__title">Customer Reviews</h2>
+
+          <div class="reviews__wrapper">
+            <article class="review review--active">
+              <div class="review__avatar-wrap">
+                <img src="images/reviewer-1.png" alt="John Smith" class="review__avatar" />
+              </div>
+              <div class="review__badge">Excellent Service!</div>
+              <blockquote class="review__text">
+                I had an amazing experience with this company. The service was
+                top notch, and the staff was incredibly friendly. I highly
+                recommend them!
+              </blockquote>
+              <cite class="review__author">John Smith</cite>
+              <p class="review__role">Traveler</p>
+              <div class="review__dots">
+                <span class="dot dot--active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR TOURS SECTION -->
+      <section class="section popular" id="popular">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Find Popular Tours</h2>
+          </div>
+
+          <div class="cards-grid">
+            <article class="card">
+              <div class="card__img-wrap">
+                <img src="images/popular-1.png" alt="Arizona Desert ATV Tour" class="card__img" />
+                <button class="card__wishlist" aria-label="Add to wishlist"></button>
+              </div>
+              <div class="card__body">
+                <p class="card__city">Paris, France</p>
+                <h3 class="card__title">
+                  Centipede Tour – Guided Arizona Desert Tour by ATV
+                </h3>
+                <div class="card__rating-wrap">
+                  <span class="card__rating">4.8 <span class="card__reviews">(243)</span></span>
+                </div>
+                <div class="card__meta">
+                  <span class="card__duration">4 days</span>
+                  <p class="card__price">From <strong>$189.25</strong></p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__img-wrap">
+                <img src="images/popular-2.png" alt="Molokini Snorkeling Adventure" class="card__img" />
+                <button class="card__wishlist" aria-label="Add to wishlist"></button>
+              </div>
+              <div class="card__body">
+                <p class="card__city">New York, USA</p>
+                <h3 class="card__title">
+                  Molokini and Turtle Town Snorkeling Adventure Aboard
+                </h3>
+                <div class="card__rating-wrap">
+                  <span class="card__rating"> 4.8 <span class="card__reviews">(243)</span></span>
+                </div>
+                <div class="card__meta">
+                  <span class="card__duration">4 days</span>
+                  <p class="card__price">From <strong>$225</strong></p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__img-wrap">
+                <img src="images/popular-3.png" alt="Westminster Walking Tour" class="card__img" />
+                <button class="card__wishlist" aria-label="Add to wishlist"></button>
+              </div>
+              <div class="card__body">
+                <p class="card__city">London, UK</p>
+                <h3 class="card__title">
+                  Westminster Walking Tour &amp; Westminster Abbey Entry
+                </h3>
+                <div class="card__rating-wrap">
+                  <span class="card__rating"> 4.8 <span class="card__reviews">(243)</span></span>
+                </div>
+                <div class="card__meta">
+                  <span class="card__duration">4 days</span>
+                  <p class="card__price">From <strong>$943</strong></p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__img-wrap">
+                <img src="images/popular-4.png" alt="Circle Island Tour with Lunch" class="card__img" />
+                <button class="card__wishlist" aria-label="Add to wishlist"></button>
+              </div>
+              <div class="card__body">
+                <p class="card__city">New York, USA</p>
+                <h3 class="card__title">
+                  All Inclusive Ultimate Circle Island Day Tour with Lunch
+                </h3>
+                <div class="card__rating-wrap">
+                  <span class="card__rating"> 4.8 <span class="card__reviews">(243)</span></span>
+                </div>
+                <div class="card__meta">
+                  <span class="card__duration">4 days</span>
+                  <p class="card__price">From <strong>$771</strong></p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- APP PROMO SECTION -->
+      <section class="app-promo" id="app-promo">
+        <div class="container">
+          <div class="app-promo__inner">
+            <div class="app-promo__text">
+              <h2 class="app-promo__title">
+                Get 5% off your 1<sup>st</sup><br />app booking
+              </h2>
+              <p class="app-promo__subtitle">
+                Bookings better on the app. Use promo code<br />
+                <strong>"TourBooking"</strong> to save!
+              </p>
+              <p class="app-promo__desc">Get a magic link sent to your email</p>
+              <form class="app-promo__form">
+                <input
+                  class="app-promo__input"
+                  type="email"
+                  placeholder="Email"
+                  aria-label="Your email address"
+                />
+                <button class="btn btn--primary" type="submit">Send</button>
+              </form>
+            </div>
+            <div class="app-promo__phones">
+              <img
+                src="images/app-mockup.png"
+                alt="Viatours mobile app mockup"
+                class="app-promo__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRAVEL ARTICLES SECTION -->
+      <section class="section articles" id="articles">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Travel Articles</h2>
+            <a href="#" class="section__link">See all</a>
+          </div>
+
+          <div class="articles__grid">
+            <article class="article-card">
+              <div class="article-card__img-wrap">
+                <img
+                  src="images/article-1.png"
+                  alt="Kenya vs Tanzania Safari"
+                  class="article-card__img"
+                />
+                <span class="article-card__category">Trips</span>
+              </div>
+              <div class="article-card__body">
+                <p class="article-card__meta">April 06 2023 | By Ali Tufan</p>
+                <h3 class="article-card__title">
+                  Kenya vs Tanzania Safari: The Better African Safari Experience
+                </h3>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="article-card__img-wrap">
+                <img
+                  src="images/article-2.png"
+                  alt="Exploring the Serengeti"
+                  class="article-card__img"
+                />
+                <span class="article-card__category">Trips</span>
+              </div>
+              <div class="article-card__body">
+                <p class="article-card__meta">April 07 2023 | By Emily Johnson</p>
+                <h3 class="article-card__title">
+                  Exploring the Serengeti: A Wildlife Adventure
+                </h3>
+              </div>
+            </article>
+
+            <article class="article-card">
+              <div class="article-card__img-wrap">
+                <img
+                  src="images/article-3.png"
+                  alt="Into the Wild Safari Journey"
+                  class="article-card__img"
+                />
+                <span class="article-card__category">Trips</span>
+              </div>
+              <div class="article-card__body">
+                <p class="article-card__meta">April 08 2023 | By Maxwell Rhodes</p>
+                <h3 class="article-card__title">
+                  Into the Wild: An Unforgettable Safari Journey
+                </h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__top">
+          <p class="footer__contact-line">
+            Speak to our expert at
+            <a href="tel:18004536744" class="footer__phone">1-800-453-6744</a>
+          </p>
+          <p class="footer__social-line">Follow Us</p>
+        </div>
+
+        <div class="footer__grid">
+          <div class="footer__col footer__col--contact">
+            <h4 class="footer__heading">Contact</h4>
+            <address class="footer__address">
+              328 Queensberry Street, North Melbourne VIC 3051, Australia.
+            </address>
+            <a href="mailto:hi@viatours.com" class="footer__email">hi@viatours.com</a>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__heading">Company</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li><a href="#" class="footer__link">Tourz Reviews</a></li>
+              <li><a href="#" class="footer__link">Contact Us</a></li>
+              <li><a href="#" class="footer__link">Travel Guides</a></li>
+              <li><a href="#" class="footer__link">Data Policy</a></li>
+              <li><a href="#" class="footer__link">Cookie Policy</a></li>
+              <li><a href="#" class="footer__link">Legal</a></li>
+              <li><a href="#" class="footer__link">Sitemap</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__heading">Support</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Get in Touch</a></li>
+              <li><a href="#" class="footer__link">Help center</a></li>
+              <li><a href="#" class="footer__link">Live chat</a></li>
+              <li><a href="#" class="footer__link">How it works</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__heading">Newsletter</h4>
+            <p class="footer__newsletter-text">
+              Subscribe to the free newsletter and stay up to date
+            </p>
+            <form class="footer__newsletter-form">
+              <input
+                class="footer__newsletter-input"
+                type="email"
+                placeholder="Your email address"
+                aria-label="Subscribe to newsletter"
+              />
+              <button class="btn btn--primary footer__newsletter-btn" type="submit">Send</button>
+            </form>
+
+            <h4 class="footer__heading footer__heading--mt">Mobile Apps</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">iOS App</a></li>
+              <li><a href="#" class="footer__link">Android App</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">© Copyright Viatours 2024</p>
+
+          <div class="footer__payments">
+            <img src="images/visa.png" alt="Visa" />
+            <img src="images/mastercard.png" alt="Mastercard" />
+            <img src="images/applepay.png" alt="Apple Pay" />
+            <img src="images/discover.png" alt="Discover" />
+            <img src="images/paypal.png" alt="PayPal" />
+            <img src="images/amex.png" alt="Amex" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
